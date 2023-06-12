@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+  <div style="display: flex; flex-direction: row;border-bottom: .5vh  solid black; font-size: 2vh"><h2 style="width: 20vw; font-size: 4vh">Welcome, @ViewData["UserName"]!</h2>
+    <form  style = " width: 20vw; margin-left: 35vw"action="/Home/Logout" method="post">
+        <button style ="background-color:rgb(225, 76, 76); color: white; border: .5vh solid black; box-shadow: 3px 4px black" type="submit">Log out</button>
+    </form></div>
+    <div style="text-align: center"><h3 style="font-size: 10vh; margin-right:5vw">@ViewData["Number"]</h3></div>
+    
+      <form method="post" action="/Home/CalculatePls">
+        <button type="submit" name="operation" value="+1">+1</button>
+        <button type="submit" name="operation" value="-1">-1</button>
+        <button type="submit" name="operation" value="x2">x2</button>
+        <button type="submit" name="operation" value="random">Random</button>
+    </form>
+</div>
+</body>
+</html>
+

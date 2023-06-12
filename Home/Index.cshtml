@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <div class="text-center">
+    <h1 class="display-4">Welcome!</h1>
+    <h2>Please give your name:</h2>
+    <form method="post" action="/Home/SetUser">
+    @* ----------------------------------------Required fix all! *@
+    <input type="text" style="border: .5vh solid black; width: 30vh; text-align: center"id= "nameInput" name="name" required>
+    <div class="but"><button type="submit" style="font-weight: bold; background-color: rgb(140, 225, 140); border: .5vh solid black; margin-top: 2vh; box-shadow: 3px 4px black;">Submit</button></div>
+    
+    </form>
+</div>
+</body>
+</html>
+
